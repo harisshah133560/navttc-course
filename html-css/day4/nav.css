@@ -1,0 +1,83 @@
+nav {
+	border: 10px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: gray;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 40px;
+	top: 2px;
+	position: sticky;
+	z-index: -1;
+}
+
+#logo1 {
+	height: 50px;
+	width: 120px;
+}
+
+.logo {
+	border-radius: 100px;
+}
+
+ul li {
+	list-style-type: none;
+	padding: 10px 20px;
+}
+
+ul a {
+	text-decoration: none;
+	color: black;
+	font-family: arial;
+	font-weight: bold;
+	transition: all ease 0.3s;
+}
+
+.Search-bar {
+	/* margin: left 10px; */
+	;
+}
+
+.search {
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+.btn-sub {
+	color: rgb(240, 240, 245);
+	background-color: blue;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+
+}
+
+ul a:hover {
+	color: rgb(255, 192, 6);
+
+}
+
+ul {
+	display: flex;
+	flex-grow: 2;
+	justify-content: flex-end;
+}
+
+.btn {
+	padding: 10px 20px;
+	background-color: rgb(255, 192, 6);
+	border-radius: 5px;
+	transition: all ease 0.3s;
+	border: none;
+}
+
+.btn:hover {
+	background-color: aqua;
+}
+
+.main {
+	width: 100%;
+	back
+}
