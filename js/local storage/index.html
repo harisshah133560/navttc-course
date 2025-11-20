@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gradient-to-r from-blue-100 to-blue-300 flex items-center justify-center min-h-screen">
+  <!-- <body> -->
+    <!-- <h1 class="text-3xl font-bold text-center mt-10">Firebase Authentication</h1> -->
+
+<!-- 
+   <div class="signupdiv">
+    <input type="text" placeholder="Enter your name" id="inputfield" class="border-gray-300 rounded px-2"  >
+    <button id="btn" class="border border-gray-300 rounded px-2 py-1 hover:bg-blue-500">Submit</button>
+   </div> -->
+   <!-- sir code  -->
+   <!-- <div class="flex flex-col w-1/2 mx-auto mt-10 gap-4" id="signupdiv">
+	<input type="text" id="name" name="name" class="border border-gray-300 rounded px-2 py-1" placeholder="Enter your name">
+	<button id="Signup" class="border border-gray-300 rounded px-2 py-1 hover:bg-blue-500">Signup</button>
+</div>
+<button onclick="logout()" class="border border-gray-300 rounded px-2 py-1 hover:bg-blue-500">LogOut</button>
+<div id="success">
+</div> -->
+
+<!-- my code -->
+<!--  
+  <div class="flex flex-col w-1/2 mx-auto mt-10 gap-4 " id="signupdiv"> 
+          <input type="email" id="email" name="email" class="border border-gray-300 rounded px-2 py-1" placeholder="Enter your email">
+          <input type="password" id="password" name="password" class="border border-gray-300 rounded px-2 py-1" placeholder="Enter your password">
+          <button id="Signup" class="border border-gray-300 rounded px-2 py-1 hover:bg-blue-500">Signup</button>
+   </div> -->
+   <!-- signout button -->
+   <!-- <div class="flex flex-col w-1/2 mx-auto mt-10 gap-4 ">
+      <button onclick="logout()" class="border border-gray-300 rounded px-2 py-1 hover:bg-blue-500" id="signout">LogOut</button>
+      <div id="success" class="mt-4 text-center text-green-500 font"></div>     
+   </div>   -->
+
+   <!-- chatgpt login form -->
+     <div class="bg-white shadow-2xl rounded-2xl p-10 w-full max-w-md text-center">
+    <h2 class="text-3xl font-bold text-blue-600 mb-6">Create Account</h2>
+
+    <!-- Signup Form -->
+     
+    <div id="signupdiv" class="flex flex-col gap-4">
+
+      <input type="text" id="name" name="name" placeholder="Enter your Name"
+        class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition" />
+      <input type="email" id="email" name="email" placeholder="Enter your email"
+        class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition" />
+
+      <input type="password" id="password" name="password" placeholder="Enter your password"
+        class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition" />
+
+      <button id="Signup"
+        class="bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition-all">Sign Up</button>
+    </div>
+    <div class="flex items-center justify-center gap-4 mt-4">
+      <span>Having an Account</span>
+      <button class="border border-gray-300 rounded px-2 py-1 hover:bg-blue-500">SignIn</button>
+    </div>
+
+    <!-- signin form -->
+     <div id="signindiv" class="hidden flex flex-col gap-4 mt-6">
+
+      <input type="email" id="loginemail" name="loginemail" placeholder="Enter your email"
+        class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition" />
+
+      <input type="password" id="loginpassword" name="loginpassword" placeholder="Enter your password"
+        class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition" />
+
+      <button id="Signin"
+        class="bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition-all">Sign In</button>
+        </div>
+
+    <!-- Success Message + Logout -->
+    <div class="flex flex-col gap-4 mt-6">
+      <div id="success" class="text-green-600 font-medium"></div>
+
+      <button onclick="logout()" id="signout"
+        class="hidden bg-red-500 text-white font-semibold py-2 rounded-lg hover:bg-red-600 transition-all">Log Out</button>
+    </div>
+  </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>

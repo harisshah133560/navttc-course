@@ -1,0 +1,205 @@
+ <!-- Second section of project -->
+  <div class="w-full min-h-screen  relative px-4 py-12">
+    <!-- Top div -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center max-w-6xl mx-auto gap-4">
+      <!-- Paragraph portion -->
+      <div>
+        <p class="text-gray-700 text-sm md:text-base">What's new?</p>
+        <h2 class="font-bold text-xl md:text-3xl">Take A Look At Our Pets</h2>
+      </div>
+
+            <!-- Button -->
+            <button class="hidden md:bg-[#103559] md:text-white md:px-4 md:py-2 md:rounded-full md:hover:bg-[#0d2a47]">Join our community</button>
+
+            
+            <div class="hidden md:flex md:items-center md:gap-1">
+              <img src="resources/Frame 45.png" alt="" class="w-10" />
+              <span class="text-[#103559]">VND</span>
+              <img src="resources/Vector.png" alt="" class="w-3" />
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img src="resources/Rectangle 1.png" alt="" class="absolute top-[486px] left-[10px] md:w-[635px] md:absolute md:z-0 md:top-[368px] md:left-[620px]">
+          <img src="resources/Rectangle 2.png" alt="" class="absolute top-[400px] left-[40px] md:w-[635px] md:absolute md:z-10 md:top-[305px] md:left-[705px]">
+          <img src="resources/Rectangle 3.png" alt="" class="hidden md:block md:w-[67px] md:absolute md:top-[163px]  md:left-[112px]">
+          <img src="resources/Rectangle 5.png" alt="" class="absolute top-[180px] left-[349px] md:w-[14.36px] md:absolute md:top-[148px]  md:left-[757px]">
+          <img src="resources/Rectangle 6.png" alt="" class="absolute w-[25px] h-[27px] top-[209px] left-[302px] z-0 md:w-[25px] md:h-[27px] md:z-0 md:absolute md:top-[200px]  md:left-[728px]">
+          <img src="resources/Rectangle 7.png" alt="" class="absolute w-[25px] h-[27px] top-[214px] left-[305px]   z-10 md:block md:w-[25px] md:h-[27px] md:absolute md:z-10 md:top-[209px]  md:left-[727px]">
+          <img src="resources/Rectangle 8.png" alt="" class="hidden md:block md:w-[635px] md:absolute md:top-[614px]  md:left-[-91px]">
+        </div>
+        <div>
+          <div class="absolute z-10 top-[139px] left-[16px] md:top-[175px] md:left-[132px] "><span class="text-[#002A48] w-[465px]  font-extrabold text-5xl font-[SVN-Gilroy]">One More Friend</span></div>
+          <div class="absolute  opacity-100 top-[199px] left-[16px]  md:top-[252px] md:left-[130px] md:w-[452px] md:h-[60px]">
+             <span class="font-[SVN-Gilroy] font-bold text-[26px] md:text-[46px] md:leading-[60px] text-[#002A48] tracking-normal capitalize">Thousands more fun!</span>
+          </div>
+          <div  class="absolute opacity-100 top-[246px] left-[16px] w-[350px] md:w-[480px] h-[72px] md:top-[336px] md:left-[130px] md:w-[480px] md:h-[72px] ">
+            <p class="text-[#242B33] text-[10px]  md:font-medium md:text-[16px] md:leading-[24px]">
+              Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. 
+              We have 200+ different pets that can meet your needs!</p>
+          </div>
+
+          <div class="absolute top-[320px] left-[30px] flex flex-row items-center justify-center gap-2 md:top-[442px] md:left-[130px]">
+           <button class=" w-[181px] h-[48px] opacity-100 flex flex-row items-center gap-2 border-[1.5px] border-gray-300 rounded-[57px] pt-[14px] pr-[28px] pb-[10px] pl-[28px] text-[#003459]">View Intro <img src="resources/Play_Circle.png" alt=""></button>
+            <button class="w-[181px] h-[48px] bg-[#003459] rounded-full text-[#fff]">Explore Now</button>
+          </div>
+
+        </div>
+
+        <div class="absolute z-20 top-[385px]  left-[30px] md:top-[100px] md:left-[580px]" >
+          <img src="resources/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.png" class=" w-[454px]   md:w-[944px] md:h-[693px]" alt="">
+        </div>
+      
+    </div>
+
+    <!-- Card section -->
+    <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="/resources/Haris_resources/Frame 7.png" alt="Pet" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">MO502 - Poodle Tiny Yellow</h3>
+          <p class="text-gray-500 text-sm">
+            Gene: <span class="font-semibold">Female</span> • Age: <span class="font-semibold">02 months</span>
+          </p>
+          <p class="mt-2 font-bold text-black">3.900.000 VND</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="/resources/Haris_resources/image 2.png" alt="Pet" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">MO503 - Cute Puppy</h3>
+          <p class="text-gray-500 text-sm">
+            Gene: <span class="font-semibold">Male</span> • Age: <span class="font-semibold">03 months</span>
+          </p>
+          <p class="mt-2 font-bold text-black">4.200.000 VND</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="/resources/Haris_resources/image 3.png" alt="Pet" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">MO504 - Fluffy Doggo</h3>
+          <p class="text-gray-500 text-sm">
+            Gene: <span class="font-semibold">Female</span> • Age: <span class="font-semibold">01 month</span>
+          </p>
+          <p class="mt-2 font-bold text-black">3.500.000 VND</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="/resources/Haris_resources/image 4.png" alt="Pet" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">MO505 - Playful Pup</h3>
+          <p class="text-gray-500 text-sm">
+            Gene: <span class="font-semibold">Male</span> • Age: <span class="font-semibold">04 months</span>
+          </p>
+          <p class="mt-2 font-bold text-black">4.500.000 VND</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="/resources/Haris_resources/image 5.png" alt="Pet" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">MO506 - Sweet Pup</h3>
+          <p class="text-gray-500 text-sm">
+            Gene: <span class="font-semibold">Female</span> • Age: <span class="font-semibold">02 months</span>
+          </p>
+          <p class="mt-2 font-bold text-black">3.800.000 VND</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="/resources/Haris_resources/image 6.png" alt="Pet" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">MO507 - Happy Puppy</h3>
+          <p class="text-gray-500 text-sm">
+            Gene: <span class="font-semibold">Male</span> • Age: <span class="font-semibold">05 months</span>
+          </p>
+          <p class="mt-2 font-bold text-black">4.700.000 VND</p>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="/resources/Haris_resources/image 7.png" alt="Pet" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">MO508 - Tiny Pup</h3>
+          <p class="text-gray-500 text-sm">
+            Gene: <span class="font-semibold">Female</span> • Age: <span class="font-semibold">01.5 months</span>
+          </p>
+          <p class="mt-2 font-bold text-black">3.600.000 VND</p>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+        <img src="/resources/Haris_resources/image 8.png" alt="Pet" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">MO509 - Lovely Pup</h3>
+          <p class="text-gray-500 text-sm">
+            Gene: <span class="font-semibold">Male</span> • Age: <span class="font-semibold">03 months</span>
+          </p>
+          <p class="mt-2 font-bold text-black">4.000.000 VND</p>
+        </div>
+      </div>
+    </div>
+    <!-- Button portion -->
+    <div class="mt-10 ml-[27%]">
+      <button
+        class="flex items-center gap-2 py-1 border border-black text-black rounded-full hover:bg-blue-700 hover:text-white transition px-7 md:hidden ">
+        View More
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform group-hover:translate-x-1"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- banner section  -->
+  <!-- 🐾 Banner Section -->
+  <section class="w-full min-h-[400px] bg-[#002F54] flex items-center justify-center rounded-2xl overflow-hidden my-12">
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 items-center">
+
+      <!-- Left Image -->
+      <div class="flex justify-center md:justify-start">
+        <img src="/resources/Haris_resources/pet kissing.png" alt="Woman with Dog" class="max-h-[400px] object-contain">
+      </div>
+
+      <!-- Right Content -->
+      <div class="bg-[#FDF0DC] p-10 md:p-16 flex flex-col justify-center rounded-l-[60px] text-center md:text-left">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-[#002F54] mb-4">
+          One More Friend
+        </h2>
+        <h3 class="text-2xl md:text-3xl font-bold text-[#002F54] mb-6">
+          Thousands More Fun!
+        </h3>
+        <p class="text-gray-700 mb-8 max-w-md">
+          Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun.
+          We have 200+ different pets that can meet your needs!
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+          <a href="#intro"
+            class="px-6 py-3 border-2 border-[#002F54] rounded-full text-[#002F54] flex items-center gap-2 hover:bg-[#002F54] hover:text-white transition">
+            <span>View Intro</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.25 12l-5.25 5.25M14.25 12l-5.25-5.25M14.25 12H3" />
+            </svg>
+          </a>
+          <a href="#explore" class="px-6 py-3 bg-[#002F54] text-white rounded-full hover:bg-[#011e36] transition">
+            Explore Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>

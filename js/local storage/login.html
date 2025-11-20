@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup & Signin Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" 
+      style="background-image: url('bg.avif');">
+
+    <!-- Container -->
+    <div class="bg-white/40 backdrop-blur-md shadow-2xl rounded-2xl p-10 w-full max-w-md text-center">
+        <!-- Form Title -->
+      <h2 id="formTitle" class="text-3xl font-bold text-blue-600 mb-6">Create Account</h2>
+
+      <!-- Signup Form -->
+      <div id="signupdiv" class="flex flex-col gap-4">
+         <input type="text" id="name" placeholder="Enter your name" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"/>
+         <input type="email" id="email" placeholder="Enter your email" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"/>
+         <input type="password" id="password" placeholder="Enter your password" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"/>
+         <button id="Signup" class="bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition-all" >Sign Up</button>
+      </div>
+
+      <!-- Signin Form -->
+      <div id="signindiv" class="hidden flex flex-col gap-4 mt-4">
+         <input type="email" id="loginemail" placeholder="Enter your email" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"/>
+         <input type="password" id="loginpassword" placeholder="Enter your password" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"/>
+         <button id="Signin" class="bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition-all">Sign In</button>
+      </div>
+
+      <!-- Toggle Buttons -->
+      <div class="flex items-center justify-center gap-2 mt-6">
+         <span id="toggleText">Already have an account?</span>
+         <button id="toggleBtn" class="border border-blue-600 text-blue-600 font-medium rounded px-3 py-1 hover:bg-blue-600 hover:text-white transition">Sign In</button>
+      </div>
+
+      <!-- Success Message + Logout -->
+      <div class="flex flex-col gap-4 mt-6">
+         <div id="success" class="text-green-600 font-medium"></div>
+         <button onclick="logout()" id="signout" class="hidden bg-red-500 text-white font-semibold py-2 rounded-lg hover:bg-red-600 transition-all">Log Out</button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Access elements
+      const signupDiv = document.getElementById("signupdiv");
+      const signinDiv = document.getElementById("signindiv");
+      const toggleBtn = document.getElementById("toggleBtn");
+      const toggleText = document.getElementById("toggleText");
+      const formTitle = document.getElementById("formTitle");
+      const successMsg = document.getElementById("success");
+      const signOutBtn = document.getElementById("signout");
+
+      const signupBtn = document.getElementById("Signup");
+      const signinBtn = document.getElementById("Signin");
+
+      // ------------------------------
+      // Toggle Between Signup & Signin
+      // ------------------------------
+      toggleBtn.addEventListener("click", () => {
+        const isSignupVisible = !signupDiv.classList.contains("hidden");
+
+        if (isSignupVisible) {
+          signupDiv.classList.add("hidden");
+          signinDiv.classList.remove("hidden");
+          formTitle.textContent = "Sign In";
+          toggleText.textContent = "Don't have an account?";
+          toggleBtn.textContent = "Sign Up";
+        } else {
+          signupDiv.classList.remove("hidden");
+          signinDiv.classList.add("hidden");
+          formTitle.textContent = "Create Account";
+          toggleText.textContent = "Already have an account?";
+          toggleBtn.textContent = "Sign In";
+        }
+
+        successMsg.textContent = "";
+      });
+
+      // ------------------------------
+      // Sign Up Function
+      // ------------------------------
+      signupBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        if (!name || !email || !password) {
+          successMsg.textContent = "⚠️ Please fill in all fields.";
+          successMsg.classList.replace("text-green-600", "text-red-600");
+          return;
+        }
+
+        const user = { name, email, password };
+        localStorage.setItem("user", JSON.stringify(user));
+
+        successMsg.textContent = `✅ Account created successfully! Welcome, ${name}.`;
+        successMsg.classList.replace("text-red-600", "text-green-600");
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
+      });
+
+      // ------------------------------
+      // Sign In Function
+      // ------------------------------
+      signinBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const loginEmail = document.getElementById("loginemail").value.trim();
+        const loginPassword = document
+          .getElementById("loginpassword")
+          .value.trim();
+
+        const savedUser = JSON.parse(localStorage.getItem("user"));
+
+        if (!savedUser) {
+          successMsg.textContent = "⚠️ No account found. Please sign up first.";
+          successMsg.classList.replace("text-green-600", "text-red-600");
+          return;
+        }
+
+        if (
+          loginEmail === savedUser.email &&
+          loginPassword === savedUser.password
+        ) {
+          successMsg.textContent = `✅ Logged in successfully! Welcome back, ${savedUser.name}.`;
+          successMsg.classList.replace("text-red-600", "text-green-600");
+
+          signOutBtn.classList.remove("hidden");
+          signupDiv.classList.add("hidden");
+          signinDiv.classList.add("hidden");
+          toggleBtn.classList.add("hidden");
+          toggleText.classList.add("hidden");
+          formTitle.textContent = "Dashboard";
+        } else {
+          successMsg.textContent = "❌ Invalid email or password.";
+          successMsg.classList.replace("text-green-600", "text-red-600");
+        }
+
+        document.getElementById("loginemail").value = "";
+        document.getElementById("loginpassword").value = "";
+      });
+
+      // ------------------------------
+      // Logout Function
+      // ------------------------------
+function logout() {
+  // Remove stored user data
+  localStorage.removeItem("user");
+  // localStorage.removeItem("password");
+  window.location.reload();
+
+  // Show success message
+  successMsg.textContent = "👋 You have logged out successfully.";
+  successMsg.classList.remove("text-red-600");
+  successMsg.classList.add("text-green-600");
+
+  // Reset UI visibility
+  signOutBtn.classList.add("hidden");
+  signupDiv.classList.remove("hidden");
+  signinDiv.classList.add("hidden");
+  toggleBtn.classList.remove("hidden");
+  toggleText.classList.remove("hidden");
+  formTitle.textContent = "Create Account";
+}
+
+
+    </script>
+  </body>
+</html>
